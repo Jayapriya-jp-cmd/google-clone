@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon">
+    <title>Google</title>
+</head>
+<body>
+   <!--Header-->
+   <div class="flex justify-between p-3">
+    <!-- Left section -->
+    <div class="flex space-x-5 text-sm items-center">
+      <a href="#" class="hover:underline">About</a>
+      <a href="#" class="hover:underline">Store</a>
+    </div>
+  
+    <!-- Right section -->
+    <div class="flex items-center space-x-5 text-sm">
+      <a href="#" class="hover:underline">Gmail</a>
+      <a href="#" class="hover:underline">Images</a>
+      <div class="p-2 hover:bg-slate-200 hover:rounded-full pt-1">
+      <svg class="w-5 h-5 mt-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M4 2C5.10457 2 6 2.89543 6 4C6 5.10457 5.10457 6 4 6C2.89543 6 2 5.10457 2 4C2 2.89543 2.89543 2 4 2ZM12 2C13.1046 2 14 2.89543 14 4C14 5.10457 13.1046 6 12 6C10.8954 6 10 5.10457 10 4C10 2.89543 10.8954 2 12 2ZM22 4C22 2.89543 21.1046 2 20 2C18.8954 2 18 2.89543 18 4C18 5.10457 18.8954 6 20 6C21.1046 6 22 5.10457 22 4ZM4 10C5.10457 10 6 10.8954 6 12C6 13.1046 5.10457 14 4 14C2.89543 14 2 13.1046 2 12C2 10.8954 2.89543 10 4 10ZM14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12ZM20 10C21.1046 10 22 10.8954 22 12C22 13.1046 21.1046 14 20 14C18.8954 14 18 13.1046 18 12C18 10.8954 18.8954 10 20 10ZM6 20C6 18.8954 5.10457 18 4 18C2.89543 18 2 18.8954 2 20C2 21.1046 2.89543 22 4 22C5.10457 22 6 21.1046 6 20ZM12 18C13.1046 18 14 18.8954 14 20C14 21.1046 13.1046 22 12 22C10.8954 22 10 21.1046 10 20C10 18.8954 10.8954 18 12 18ZM22 20C22 18.8954 21.1046 18 20 18C18.8954 18 18 18.8954 18 20C18 21.1046 18.8954 22 20 22C21.1046 22 22 21.1046 22 20Z"
+          fill="#000000" />
+      </svg></div>
+      <button class="bg-blue-700 text-white  rounded-full font-medium px-4 py-2.5 hover:shadow-lg ">Sign In</button>
+    </div>
+
+  </div>
+  <!--Logo-->
+  <div class="flex justify-center mt-5">
+    <img class="w-1/2 md:w-1/5 h-24" src="img/google-logo.png" alt="">
+  </div>
+  <!--Search Bar-->
+  <div class="flex justify-center mt-5">
+
+    <div class="flex justify-around border border-gray-300 p-2 items-center rounded-full gap-4 shadow-lg hover:drop-shadow w-full md:w-1/2 mx-5">
+        <svg class="h-8 w-8 fill-gray-400  ml-2" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+        <div class="w-full">
+            <input id="search" type="text" class="outline-0 bg-inherit " >
+        </div>
+        <svg class="h-8 w-8 " focusable="false" viewBox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg"><path fill="var(--bbQxAb)" d="M480-400q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm-40 280v-123q-104-14-172-93t-68-184h80q0 83 58.5 141.5T480-320q83 0 141.5-58.5T680-520h80q0 105-68 184t-172 93v123h-80Z"></path></svg>
+        <svg class="h-8 w-8  mr-2" focusable="false" viewBox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg"><path fill="var(--bbQxAb)" d="M480-320q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35Zm240 160q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160Zm-440 40q-66 0-113-47t-47-113v-80h80v80q0 33 23.5 56.5T280-200h200v80H280Zm480-320v-160q0-33-23.5-56.5T680-680H280q-33 0-56.5 23.5T200-600v120h-80v-120q0-66 47-113t113-47h80l40-80h160l40 80h80q66 0 113 47t47 113v160h-80Z"></path></svg>
+    </div>
+    
+  </div>
+  <!--Treading Searches-->
+  <div id="resultlist" class="hidden flex justify-center">
+    <div class="w-full md:w-1/2 mx-5 shadow">
+        <div class="p-3 text-gray-400">
+            <span> Treading Searches</span>
+        </div>
+        <ul>
+            <ls class="flex gap-2 items-center p-2 hover:bg-gray-100">
+                <svg class="h-5 w-5 fill-gray-300" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <title>ic_fluent_arrow_trending_24_regular</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="🔍-System-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="ic_fluent_arrow_trending_24_regular" fill="#9CA3AF" fill-rule="nonzero">
+                            <path d="M13.748109,5.5 L21.3019242,5.50051747 L21.4021456,5.51444244 L21.4021456,5.51444244 L21.5009898,5.54204665 L21.5009898,5.54204665 L21.5612467,5.5675979 L21.5612467,5.5675979 C21.6405078,5.60246184 21.7147377,5.6531499 21.779948,5.71835585 L21.8206583,5.76240015 L21.8206583,5.76240015 L21.8642064,5.81878079 L21.8642064,5.81878079 L21.9183676,5.90890372 L21.9183676,5.90890372 L21.9570435,5.99922163 L21.9570435,5.99922163 L21.9762122,6.06329705 L21.9762122,6.06329705 L21.9898018,6.12730035 L21.9898018,6.12730035 L21.9991454,6.22150278 L21.9991454,6.22150278 L21.9996358,13.7538905 C21.9996358,14.168104 21.6638494,14.5038905 21.2496358,14.5038905 C20.86994,14.5038905 20.5561448,14.2217366 20.5064824,13.855661 L20.4996358,13.7538905 L20.4991881,8.059 L12.7803479,15.7792573 C12.5140876,16.0455355 12.0974196,16.069753 11.8038008,15.8519026 L11.7196801,15.7792854 L8.74919829,12.8089181 L3.27951815,18.2785982 C2.98662493,18.5714914 2.5117512,18.5714914 2.21885798,18.2785982 C1.95259142,18.0123316 1.92838537,17.5956679 2.14623983,17.3020565 L2.21885798,17.217938 L8.21885798,11.217938 C8.48512091,10.9516751 8.90177775,10.9274656 9.19538927,11.1453121 L9.27950793,11.2179278 L12.2499719,14.1882773 L19.4371881,7 L13.748109,7 C13.3684132,7 13.054618,6.71784612 13.0049556,6.35177056 L12.998109,6.25 C12.998109,5.87030423 13.2802629,5.55650904 13.6463384,5.50684662 L13.748109,5.5 Z" id="🎨-Color">
+                
+                </path>
+                        </g>
+                    </g>
+                </svg>
+                <span> cbse results class 10th cbse board</span>
+            </ls>
+            <ls class="flex gap-2 items-center p-2 hover:bg-gray-100">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <title>ic_fluent_arrow_trending_24_regular</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="🔍-System-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="ic_fluent_arrow_trending_24_regular" fill="#9CA3AF" fill-rule="nonzero">
+                            <path d="M13.748109,5.5 L21.3019242,5.50051747 L21.4021456,5.51444244 L21.4021456,5.51444244 L21.5009898,5.54204665 L21.5009898,5.54204665 L21.5612467,5.5675979 L21.5612467,5.5675979 C21.6405078,5.60246184 21.7147377,5.6531499 21.779948,5.71835585 L21.8206583,5.76240015 L21.8206583,5.76240015 L21.8642064,5.81878079 L21.8642064,5.81878079 L21.9183676,5.90890372 L21.9183676,5.90890372 L21.9570435,5.99922163 L21.9570435,5.99922163 L21.9762122,6.06329705 L21.9762122,6.06329705 L21.9898018,6.12730035 L21.9898018,6.12730035 L21.9991454,6.22150278 L21.9991454,6.22150278 L21.9996358,13.7538905 C21.9996358,14.168104 21.6638494,14.5038905 21.2496358,14.5038905 C20.86994,14.5038905 20.5561448,14.2217366 20.5064824,13.855661 L20.4996358,13.7538905 L20.4991881,8.059 L12.7803479,15.7792573 C12.5140876,16.0455355 12.0974196,16.069753 11.8038008,15.8519026 L11.7196801,15.7792854 L8.74919829,12.8089181 L3.27951815,18.2785982 C2.98662493,18.5714914 2.5117512,18.5714914 2.21885798,18.2785982 C1.95259142,18.0123316 1.92838537,17.5956679 2.14623983,17.3020565 L2.21885798,17.217938 L8.21885798,11.217938 C8.48512091,10.9516751 8.90177775,10.9274656 9.19538927,11.1453121 L9.27950793,11.2179278 L12.2499719,14.1882773 L19.4371881,7 L13.748109,7 C13.3684132,7 13.054618,6.71784612 13.0049556,6.35177056 L12.998109,6.25 C12.998109,5.87030423 13.2802629,5.55650904 13.6463384,5.50684662 L13.748109,5.5 Z" id="🎨-Color">
+                
+                </path>
+                        </g>
+                    </g>
+                </svg>
+                <span> 
+                    maharashtra board ssc results
+                    </span>
+            </ls>
+            <ls class="flex gap-2 items-center p-2 hover:bg-gray-100">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <title>ic_fluent_arrow_trending_24_regular</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="🔍-System-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="ic_fluent_arrow_trending_24_regular" fill="#9CA3AF" fill-rule="nonzero">
+                            <path d="M13.748109,5.5 L21.3019242,5.50051747 L21.4021456,5.51444244 L21.4021456,5.51444244 L21.5009898,5.54204665 L21.5009898,5.54204665 L21.5612467,5.5675979 L21.5612467,5.5675979 C21.6405078,5.60246184 21.7147377,5.6531499 21.779948,5.71835585 L21.8206583,5.76240015 L21.8206583,5.76240015 L21.8642064,5.81878079 L21.8642064,5.81878079 L21.9183676,5.90890372 L21.9183676,5.90890372 L21.9570435,5.99922163 L21.9570435,5.99922163 L21.9762122,6.06329705 L21.9762122,6.06329705 L21.9898018,6.12730035 L21.9898018,6.12730035 L21.9991454,6.22150278 L21.9991454,6.22150278 L21.9996358,13.7538905 C21.9996358,14.168104 21.6638494,14.5038905 21.2496358,14.5038905 C20.86994,14.5038905 20.5561448,14.2217366 20.5064824,13.855661 L20.4996358,13.7538905 L20.4991881,8.059 L12.7803479,15.7792573 C12.5140876,16.0455355 12.0974196,16.069753 11.8038008,15.8519026 L11.7196801,15.7792854 L8.74919829,12.8089181 L3.27951815,18.2785982 C2.98662493,18.5714914 2.5117512,18.5714914 2.21885798,18.2785982 C1.95259142,18.0123316 1.92838537,17.5956679 2.14623983,17.3020565 L2.21885798,17.217938 L8.21885798,11.217938 C8.48512091,10.9516751 8.90177775,10.9274656 9.19538927,11.1453121 L9.27950793,11.2179278 L12.2499719,14.1882773 L19.4371881,7 L13.748109,7 C13.3684132,7 13.054618,6.71784612 13.0049556,6.35177056 L12.998109,6.25 C12.998109,5.87030423 13.2802629,5.55650904 13.6463384,5.50684662 L13.748109,5.5 Z" id="🎨-Color">
+                
+                </path>
+                        </g>
+                    </g>
+                </svg>
+                <span> ap eamcet hall ticket admit card
+                   </span>
+            </ls>
+            <ls class="flex gap-2 items-center p-2 hover:bg-gray-100">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <title>ic_fluent_arrow_trending_24_regular</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="🔍-System-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="ic_fluent_arrow_trending_24_regular" fill="#9CA3AF" fill-rule="nonzero">
+                            <path d="M13.748109,5.5 L21.3019242,5.50051747 L21.4021456,5.51444244 L21.4021456,5.51444244 L21.5009898,5.54204665 L21.5009898,5.54204665 L21.5612467,5.5675979 L21.5612467,5.5675979 C21.6405078,5.60246184 21.7147377,5.6531499 21.779948,5.71835585 L21.8206583,5.76240015 L21.8206583,5.76240015 L21.8642064,5.81878079 L21.8642064,5.81878079 L21.9183676,5.90890372 L21.9183676,5.90890372 L21.9570435,5.99922163 L21.9570435,5.99922163 L21.9762122,6.06329705 L21.9762122,6.06329705 L21.9898018,6.12730035 L21.9898018,6.12730035 L21.9991454,6.22150278 L21.9991454,6.22150278 L21.9996358,13.7538905 C21.9996358,14.168104 21.6638494,14.5038905 21.2496358,14.5038905 C20.86994,14.5038905 20.5561448,14.2217366 20.5064824,13.855661 L20.4996358,13.7538905 L20.4991881,8.059 L12.7803479,15.7792573 C12.5140876,16.0455355 12.0974196,16.069753 11.8038008,15.8519026 L11.7196801,15.7792854 L8.74919829,12.8089181 L3.27951815,18.2785982 C2.98662493,18.5714914 2.5117512,18.5714914 2.21885798,18.2785982 C1.95259142,18.0123316 1.92838537,17.5956679 2.14623983,17.3020565 L2.21885798,17.217938 L8.21885798,11.217938 C8.48512091,10.9516751 8.90177775,10.9274656 9.19538927,11.1453121 L9.27950793,11.2179278 L12.2499719,14.1882773 L19.4371881,7 L13.748109,7 C13.3684132,7 13.054618,6.71784612 13.0049556,6.35177056 L12.998109,6.25 C12.998109,5.87030423 13.2802629,5.55650904 13.6463384,5.50684662 L13.748109,5.5 Z" id="🎨-Color">
+                
+                </path>
+                        </g>
+                    </g>
+                </svg>
+                <span>
+                    zodiac signs daily horoscope today</span>
+            </ls>
+        </ul>
+      </div>
+    </div>
+   
+  <!--Buttons-->
+  <div class="flex justify-center mt-5 gap-5">
+    <button class="bg-gray-100 p-2 rounded-sm hover:outline-1 hover:outline-gray-300 text-sm hover:shadow-lg">Google Search</button>
+    <button class="bg-gray-100 p-2 rounded-sm hover:outline-1 hover:outline-gray-300 text-sm hover:shadow-lg">I'm Feeling Good</button>
+</div>
+<!--languages-->
+<div class="flex justify-center mt-5 gap-2 mb-5 text-sm">
+    <div class="  text-sm mx-2">Google offered in:
+    </div>
+    <div class=" space-x-3 text-sm text-blue-800 " >
+        <a href="#" class="hover:underline"> हिन्दी</a>
+        <a href="#" class="hover:underline">  বাংলা </a>
+        <a href="#" class="hover:underline"> తెలుగు</a>
+        <a href="#" class="hover:underline"> मराठी</a>
+        <a href="#" class="hover:underline">  தமிழ்</a>
+        <a href="#"class="hover:underline" >  ગુજરાતી</a>
+        <a href="#" class="hover:underline"> ಕನ್ನಡ</a>
+        <a href="#"class="hover:underline" >മലയാളം </a>
+        <a href="#" class="hover:underline">ਪੰਜਾਬੀ</a>
+
+    </div>
+</div>
+<!--Footer-->
+<div class="fixed bottom-0 bg-gray-100 w-full p-2 text-sm text-gray-800">
+    <div class="p-2 border-b border-gray-300">
+       <span> India</span>
+    </div>
+    <div class="p-1 flex flex-col md:flex-row items-center md:justify-between">
+
+        <div class="flex justify-center gap-5 p-2" >
+            <span class="hover:underline"><a href="#" >About</a></span>
+            <span class="hover:underline"><a href="#" >Advertising</a> </span>
+        <span class="hover:underline">
+           <a href="#"> Business</a>
+            </span>
+        <span class="hover:underline"><a href="#">How Search works</a></span>
+
+        </div>
+
+        <div class="flex justify-center gap-5  p-2">
+        <span class="hover:underline"><a href="#">Privacy</a></span>
+        <span class="hover:underline"><a href="#">Terms</a></span>
+        <span class="hover:underline"><a href="#">Settings</a></span>
+    </div>
+</div>
+<script>
+    document.getElementById('search')
+    .onfocus = function (){
+        document.getElementById('resultlist')
+        .classList.toggle('hidden')
+    }
+    document.getElementById('search')
+    .onblur = function (){
+        document.getElementById('resultlist')
+        .classList.toggle('hidden')
+    }
+    </script>
+</body>
+</html>
